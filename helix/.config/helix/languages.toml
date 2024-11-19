@@ -1,0 +1,73 @@
+
+# gpt language server
+# TODO: how can I sync this easily between devices?
+[language-server.gpt]
+command = "/home/cem/Setups/helix-gpt-run.sh"
+# args = ["--logFile", "/home/cem/.cache/helix/gpt.log"]
+
+# use log for debugging
+# [language-server.pylsp]
+# plugins.pylint_lint.enabled = true
+# args = ["--log-file", "/home/cem/.cache/helix/pylsp.log", "-v"]
+
+# TODO: trying to include perl modules, is this working?
+[language-server.perlnavigator]
+config = { perlnavigator.includePaths = [ "$workspaceFolder" ] }
+
+# use multiple language servers
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "gpt"]
+
+[[language]]
+name = "python"
+language-servers = [ "pylsp", "gpt" ]
+
+[[language]]
+name = "c"
+language-servers = [ "gpt" ]
+# language-servers = [ "clangd", "gpt" ]
+file-types = ["c", "h"]
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server", "gpt" ]
+
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "gpt" ]
+
+[[language]]
+name = "css"
+auto-format = false
+language-servers = [ "vscode-css-language-server", "gpt" ]
+
+[[language]]
+name = "html"
+auto-format = false
+language-servers = [ "vscode-html-language-server", "gpt" ]
+
+[[language]]
+name = "bash"
+language-servers = [ "bash-language-server" , "gpt" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "gpt" ]
+file-types = [ "svelte" ]
+
+[[language]]
+name = "perl"
+file-types = ["pl", "pm"]
+language-servers = [ "perlnavigator", "gpt" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "gpt" ]
+
+[[language]]
+name = "scss"
+file-types = ["scss", "less"]
+auto-format = false
+language-servers = [ "gpt" ]

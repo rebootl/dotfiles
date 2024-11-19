@@ -1,0 +1,12 @@
+
+inherits = "tokyonight_moon"
+
+comment = { fg = "comment" }
+function = { fg = "blue" }
+keyword = { fg = "purple" }
+"keyword.control.return" = { fg = "purple" }
+
+"variable.parameter" = { fg = "yellow" }
+
+"ui.linenr.selected" = { fg = "orange", modifiers = ["bold"] }
+

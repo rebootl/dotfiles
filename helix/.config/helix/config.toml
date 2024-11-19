@@ -1,0 +1,80 @@
+theme = "tokyonight-my"
+
+### Keybinds
+
+[keys.normal]
+# EZ Save
+"C-s" = ":w"
+
+# Buffers control
+"C-left" = ":bp"
+"C-right" = ":bn"
+"C-h" = ":bp"
+"C-l" = ":bn"
+"C-p" = ":bp"
+"C-n" = ":bn"
+"C-x" = ":bc"
+
+# Navigation
+# "K" = "page_cursor_half_up"
+# "J" = "page_cursor_half_down"
+"K" = "scroll_up"
+"J" = "scroll_down"
+# (these come from vim, maybe sometimes useful)
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+
+# (not really using this, what does it even do?)
+"C-j" = "save_selection"
+
+# EZ Manipulation
+"A-a" = "increment"
+"A-z" = "decrement"
+"A-u" = "switch_to_uppercase"
+"A-l" = "switch_to_lowercase"
+
+# delete all trailing white space
+# from: ...
+# 
+# maybe this could be a simpler alternative?
+# -> command = "git", args = ["stripspace"] }
+"C-t" = [
+  "select_all",
+  # Delete trailing whitespace from end of each line
+  ":pipe sed 's/[ \t]*$//'",
+  # Delete trailing blank lines (including whitespace) from end of the buffer
+  ":pipe awk '/^\\s*$/ {b=b $0 \"\\n\"; next;} {printf \"%s\",b; b=\"\"; print;}'",
+  "collapse_selection",
+  # "jump_backward",
+  # "commit_undo_checkpoint",
+  # ":write",
+]
+
+### UI
+
+[editor]
+# Renders a line at the top of the editor displaying open buffers. Can be
+# always, never or multiple (only shown if more than one buffer is in use)
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+# show hidden files
+hidden = false
+
+[editor.gutters.line-numbers]
+min-width = 0
+
+# [editor.indent-guides]
+# render = true
+# character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+# skip-levels = 1
+
+# [editor.whitespace.render]
+# space = "all"
+# tab = "all"
+# newline = "none"
