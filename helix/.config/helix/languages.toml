@@ -10,6 +10,9 @@ command = "/home/cem/Setups/helix-gpt-run.sh"
 # plugins.pylint_lint.enabled = true
 # args = ["--log-file", "/home/cem/.cache/helix/pylsp.log", "-v"]
 
+[language-server.pylsp.config.pylsp.plugins]
+black.enabled = true
+
 # TODO: trying to include perl modules, is this working?
 [language-server.perlnavigator]
 config = { perlnavigator.includePaths = [ "$workspaceFolder" ] }
@@ -23,6 +26,10 @@ language-servers = ["rust-analyzer", "gpt"]
 [[language]]
 name = "python"
 language-servers = [ "pylsp", "gpt" ]
+
+[[language]]
+name = "go"
+language-servers = [ "gopls", "gpt" ]
 
 [[language]]
 name = "c"
@@ -59,7 +66,7 @@ file-types = [ "svelte" ]
 
 [[language]]
 name = "perl"
-file-types = ["pl", "pm"]
+file-types = ["pl", "pm", "t"]
 language-servers = [ "perlnavigator", "gpt" ]
 
 [[language]]

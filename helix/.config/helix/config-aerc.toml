@@ -1,4 +1,4 @@
-theme = "tokyonight-my"
+theme = "adwaita-dark"
 
 ### Keybinds
 
@@ -78,6 +78,11 @@ hidden = false
 
 [editor.gutters.line-numbers]
 min-width = 0
+
+# soft wrap for use in aerc mail client
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
 
 # [editor.indent-guides]
 # render = true
