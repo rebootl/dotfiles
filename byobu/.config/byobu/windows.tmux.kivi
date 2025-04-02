@@ -1,6 +1,6 @@
 new-window -n Mail aerc ;
 new-window -n IRC weechat ;
 new-window -n kivi1 -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp ;
-new-window -n log -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp tail -f users/kivitendo-debug.log ;
+new-window -n log -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp tail -f spool/kivitendo-debug.log ;
 new-window -n git -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp lazygit ;
 new-window -n docker -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp lazydocker ;
