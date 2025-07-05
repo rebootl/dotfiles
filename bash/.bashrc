@@ -13,6 +13,7 @@ alias hx=helix
 alias lg=lazygit
 alias ld=lazydocker
 alias rn=ranger
+alias o=xdg-open
 
 export EDITOR=helix
 
@@ -32,7 +33,7 @@ export PATH="$PATH:$NPM_PACKAGES/bin"
 # Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 # eval "$(perl -I$HOME/.perl5/lib/perl5 -Mlocal::lib=$HOME/.perl5)"
 
