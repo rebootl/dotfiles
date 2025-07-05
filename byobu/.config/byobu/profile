@@ -1,1 +1,6 @@
 source $BYOBU_PREFIX/share/byobu/profiles/common
+
+# bind 'H' next
+# bind 'L' prev
+# bind 'j' switch -n
+# bind 'k' switch -p

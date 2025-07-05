@@ -4,3 +4,4 @@ new-window -n kivi1 -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp ;
 new-window -n log -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp tail -f spool/kivitendo-debug.log ;
 new-window -n git -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp lazygit ;
 new-window -n docker -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp lazydocker ;
+new-window -n hotreload -c /home/cem/Geschaeft/docker-dev-kivi/web/kivitendo-erp/scripts bun run --port 7575 hotreload-server.js;
