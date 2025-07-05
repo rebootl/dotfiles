@@ -30,8 +30,8 @@ theme = "adwaita-dark"
 # EZ Manipulation
 "A-a" = "increment"
 "A-z" = "decrement"
-"A-u" = "switch_to_uppercase"
-"A-l" = "switch_to_lowercase"
+"A-S-u" = "switch_to_uppercase"
+"A-S-l" = "switch_to_lowercase"
 
 # delete all trailing white space
 # from: ...

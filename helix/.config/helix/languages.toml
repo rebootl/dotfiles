@@ -57,7 +57,8 @@ language-servers = [ "vscode-html-language-server", "gpt" ]
 
 [[language]]
 name = "bash"
-language-servers = [ "bash-language-server" , "gpt" ]
+# language-servers = [ "bash-language-server" , "gpt" ]
+language-servers = [ "gpt" ]
 
 [[language]]
 name = "svelte"
@@ -71,7 +72,8 @@ language-servers = [ "perlnavigator", "gpt" ]
 
 [[language]]
 name = "markdown"
-language-servers = [ "marksman", "gpt" ]
+# language-servers = [ "marksman", "gpt" ]
+language-servers = [ "gpt" ]
 
 [[language]]
 name = "scss"
