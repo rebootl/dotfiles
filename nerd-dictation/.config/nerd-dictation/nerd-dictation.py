@@ -103,8 +103,8 @@ WORD_REPLACE_REGEX = tuple(
 # Add Punctuation
 
 CLOSING_PUNCTUATION = {
-    "period": ".",
-    "comma": ",",
+    # "period": ".",
+    # "comma": ",",
     "question mark": "?",
     "close quote": '"',
     'equal': '=',
