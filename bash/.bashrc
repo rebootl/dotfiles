@@ -14,6 +14,9 @@ alias lg=lazygit
 alias ld=lazydocker
 alias rn=ranger
 alias o=xdg-open
+alias oc=opencode
+
+alias hx-mail="hx --config ./.config/helix/config-aerc.toml"
 
 export EDITOR=helix
 
