@@ -41,9 +41,9 @@ file-types = ["c", "h"]
 name = "javascript"
 language-servers = [ "typescript-language-server", "gpt" ]
 
-[[language]]
-name = "typescript"
-language-servers = [ "typescript-language-server", "gpt" ]
+# [[language]]
+# name = "typescript"
+# language-servers = [ "typescript-language-server", "gpt" ]
 
 [[language]]
 name = "css"
@@ -69,6 +69,7 @@ file-types = [ "svelte" ]
 name = "perl"
 file-types = ["pl", "pm", "t"]
 language-servers = [ "perlnavigator", "gpt" ]
+# language-servers = [ "gpt" ]
 
 [[language]]
 name = "markdown"
@@ -80,3 +81,22 @@ name = "scss"
 file-types = ["scss", "less"]
 auto-format = false
 language-servers = [ "gpt" ]
+
+[[language]]
+name = "typescript"
+roots = ["deno.json", "deno.jsonc", "package.json"]
+file-types = ["ts", "tsx"]
+auto-format = true
+language-servers = ["deno-lsp", "gpt"]
+
+# [[language]]
+# name = "javascript"
+# roots = ["deno.json", "deno.jsonc", "package.json"]
+# file-types = ["js", "jsx"]
+# auto-format = true
+# language-servers = ["deno-lsp", "gpt"]
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+config.deno.enable = true

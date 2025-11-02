@@ -6,6 +6,9 @@ theme = "tokyonight-my"
 # EZ Save
 "C-s" = ":w"
 
+# copy file name to clipboard
+"C-o" = ":! wl-copy %{buffer_name}"
+
 # Buffers control
 "C-left" = ":bp"
 "C-right" = ":bn"
