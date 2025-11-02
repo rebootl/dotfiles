@@ -9,3 +9,6 @@ bind-key -n M-h previous-window
 bind-key -n M-l next-window
 bind-key -n M-j switch-client -p
 bind-key -n M-k switch-client -n
+
+unbind-key -n M-Left
+unbind-key -n M-Right
